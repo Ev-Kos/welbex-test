@@ -1,0 +1,11 @@
+.content {
+  padding: 46px 0 0; 
+  overflow: hidden;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0; 
+  }
+}

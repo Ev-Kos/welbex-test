@@ -1,0 +1,31 @@
+.wrapperForHeader {
+  display: flex;
+  gap: 47px;
+}
+
+.contact {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #E4E5EA;
+  min-width: 143px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+.icon {
+  width: 20px;
+  height: 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperForHeader {
+    display: none;
+  }
+}
