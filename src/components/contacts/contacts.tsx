@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from './contacts.module.css';
+import styles from './contacts.module.scss';
 import { NavLink } from 'react-router-dom';
 import telegram from '../../images/telegram.svg';
 import whatsapp from '../../images/whatsapp.svg';

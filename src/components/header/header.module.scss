@@ -1,3 +1,5 @@
+@use '../../utils/variables.scss' as *;
+
 .header {
   max-width: 1140px;
   display: flex;
@@ -19,10 +21,8 @@
 
 .description {
   font-family: 'Montserrat';
-  font-size: 10px;
-  font-weight: 300;
-  line-height: 12px;
-  color: #E4E5EA;
+  @include text(10px, 12px, 300);
+  color: $colorText;
   max-width: 165px;
   margin: 0;
 }
@@ -42,18 +42,14 @@
 }
 
 .link {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  color: #E4E5EA;
+  @include text(16px, 19px, 500);
+  color: $colorText;
   text-decoration: none;
 }
 
 .linkHidden {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  color: #E4E5EA;
+  @include text(16px, 19px, 500);
+  color: $colorText;
   text-decoration: none;
 }
 
@@ -82,8 +78,7 @@
     display: none;
   }
   .link {
-    font-size: 12px;
-    line-height: 14.52px;
+    @include text(12px, 15px, 500);
     text-transform: uppercase;
   } 
 }

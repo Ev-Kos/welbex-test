@@ -1,4 +1,4 @@
-import styles from './header.module.css';
+import styles from './header.module.scss';
 import logo from '../../images/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { Contacts } from '../contacts/contacts';

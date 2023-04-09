@@ -1,3 +1,5 @@
+@use '../../utils/variables.scss' as *;
+
 .info {
   max-width: 1160px;
   padding: 0 10px;
@@ -11,18 +13,14 @@
 }
 
 .title {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 58px;
+  @include text(48px, 58px, 400);
   margin: 0;
-  color: #e4e5ea;
+  color: $colorText;
 }
 
 .titleColor {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 44px;
-  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  @include text(36px, 44px, 900);
+  background: $gradientTitle, $colorText;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -30,38 +28,30 @@
 
 .subtitle {
   font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  @include text(18px, 22px, 400);
   margin: 0;
-  color: #e4e5ea;
+  color: $colorText;
 }
 
 .wrapPromo {
   display: flex;
   flex-direction: column;
   max-width: 391px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  color: #e4e5ea;
+  @include text(18px, 22px, 500);
+  color: $colorText;
 }
 
 .promoTitle {
   margin: 0;
   text-align: right;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  @include text(18px, 22px, 500);
   align-self: flex-end;
   max-width: 290px;
-  color: #e4e5ea;
+  color: $colorText;
 }
 .color {
   text-transform: uppercase;
-  background: linear-gradient(
-    90deg, #fcb045 36.99%, #fd1d1d 100%
-  );
+  background: $gradientText;
   letter-spacing: 0.05em;
   background-clip: text;
   -webkit-background-clip: text;
@@ -84,20 +74,16 @@
 
 .titleCard {
   margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 22px;
+  @include text(18px, 22px, 500);
   letter-spacing: 0.05em;
 }
 
 .descriptionCard {
   margin: 6px 0 0;
   font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include text(16px, 20px, 500);
   text-align: right;
-  color: #e4e5ea;
+  color: $colorText;
 }
 
 .cardsMobile {
@@ -105,12 +91,10 @@
 }
 
 .button {
-  background-color: #4077f3;
+  background-color: $colorButton;
   justify-content: center;
-  color: #e4e5ea;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 500;
+  color: $colorText;
+  @include text(16px, 19px, 500);
   padding: 22px 32px;
   align-self: flex-end;
   border: none;
@@ -121,7 +105,6 @@
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 700px) {
   .info {
     flex-direction: column;
@@ -129,13 +112,7 @@
     margin: 40px auto 20px;
   }
   .title {
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 400;
-  }
-  .subtitle {
-    font-size: 18px;
-    line-height: 22px;
+    @include text(36px, 44px, 400);
   }
   .promoTitle {
     text-align: left;
@@ -148,15 +125,11 @@
     text-align: left;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15.85px;
+    @include text(13px, 16px, 400);
     text-transform: uppercase;
   }
   .line {
-    background: linear-gradient(
-      90deg, #fcb045 36.99%, #fd1d1d 100%
-    );
+    background: $gradientText;
     background-clip: text;
     box-decoration-break: clone;
     -webkit-text-fill-color: transparent;
