@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.1e138121.css",
+    "main.css": "./static/css/main.41de0c7a.css",
     "main.js": "./static/js/main.a5c5365d.js",
     "static/js/787.a80fdc45.chunk.js": "./static/js/787.a80fdc45.chunk.js",
     "static/media/Inter-Bold.woff": "./static/media/Inter-Bold.1e547cd04bfe2dae1f98.woff",
@@ -20,12 +20,12 @@
     "static/media/viber.svg": "./static/media/viber.af065114865219181864377f8623c26f.svg",
     "index.html": "./index.html",
     "static/media/telegram.svg": "./static/media/telegram.e06f7254a04fa3f3d6df3f59a01e133a.svg",
-    "main.1e138121.css.map": "./static/css/main.1e138121.css.map",
+    "main.41de0c7a.css.map": "./static/css/main.41de0c7a.css.map",
     "main.a5c5365d.js.map": "./static/js/main.a5c5365d.js.map",
     "787.a80fdc45.chunk.js.map": "./static/js/787.a80fdc45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e138121.css",
+    "static/css/main.41de0c7a.css",
     "static/js/main.a5c5365d.js"
   ]
 }
