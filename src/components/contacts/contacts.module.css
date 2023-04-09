@@ -24,7 +24,11 @@
   height: 19px;
 }
 
-@media screen and (max-width: 768px) {
+.icon:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1140px) {
   .wrapperForHeader {
     display: none;
   }

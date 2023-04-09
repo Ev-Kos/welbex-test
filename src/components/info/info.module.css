@@ -1,0 +1,184 @@
+.info {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 94px auto 124px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapTittle {
+  max-width: 300px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 0;
+  color: #e4e5ea;
+}
+
+.titleColor {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  color: #e4e5ea;
+}
+
+.wrapPromo {
+  display: flex;
+  flex-direction: column;
+  max-width: 391px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #e4e5ea;
+}
+
+.promoTitle {
+  margin: 0;
+  text-align: right;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  align-self: flex-end;
+  max-width: 290px;
+  color: #e4e5ea;
+}
+.color {
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg, #fcb045 36.99%, #fd1d1d 100%
+  );
+  letter-spacing: 0.05em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: grid;
+  align-self: flex-end;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 31px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 40px 0 61px 0;
+  margin: 0;
+  text-align: right;
+  list-style: none;
+}
+
+.titleCard {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.descriptionCard {
+  margin: 6px 0 0;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #e4e5ea;
+}
+
+.cardsMobile {
+  display: none;
+}
+
+.button {
+  background-color: #4077f3;
+  justify-content: center;
+  color: #e4e5ea;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  padding: 22px 32px;
+  align-self: flex-end;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+  .info {
+    flex-direction: column;
+    gap: 45px;
+    margin: 40px auto 20px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .promoTitle {
+    text-align: left;
+    align-self: flex-start;
+  }
+  .cards {
+    display: none;
+  }
+  .titleCard {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.85px;
+    text-transform: uppercase;
+  }
+  .line {
+    background: linear-gradient(
+      90deg, #fcb045 36.99%, #fd1d1d 100%
+    );
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    -webkit-background-clip: text;
+  }
+  .cardsMobile {
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2px;
+    row-gap: 14px;
+    margin: 0;
+    padding: 40px 0 61px 0;
+    position: relative;
+    list-style: none;
+  }
+  .card {
+    min-width: 150px;
+  }
+  .button {
+    display: none;
+  }
+}
