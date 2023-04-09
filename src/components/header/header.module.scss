@@ -1,0 +1,84 @@
+@use '../../utils/variables.scss' as *;
+
+.header {
+  max-width: 1140px;
+  display: flex;
+  gap: 52px;
+  margin: 0 auto;
+}
+
+.logoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 11px 0 0;
+}
+
+.logo {
+  width: 140px;
+  height: 24px;
+}
+
+.description {
+  font-family: 'Montserrat';
+  @include text(10px, 12px, 300);
+  color: $colorText;
+  max-width: 165px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 137px;
+
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 15px 0;
+  gap: 30px;
+  margin: 0;
+}
+
+.link {
+  @include text(16px, 19px, 500);
+  color: $colorText;
+  text-decoration: none;
+}
+
+.linkHidden {
+  @include text(16px, 19px, 500);
+  color: $colorText;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1140px) {
+  .header {
+    max-width: 320px;
+    display: flex;
+    gap: 0;
+    padding: 18px 18px;
+  }
+  .logoWrap {
+    display: none;
+  }
+  .nav {
+    gap: 0;
+  }
+  .menu {
+    gap: 16px;
+    padding: 0;
+  }
+  .linkHidden {
+    display: none;
+  }
+  .link {
+    @include text(12px, 15px, 500);
+    text-transform: uppercase;
+  } 
+}

@@ -1,0 +1,159 @@
+@use '../../utils/variables.scss' as *;
+
+.container {
+  position: relative;
+  background: $background-color;
+  z-index: -1;
+  width: 100vw;
+}
+
+.purpleBall {
+  position: absolute;
+  z-index: -1;
+  width: 60px;
+  height: 60px;
+  left: 868px;
+  top: -44px;
+  border-radius: 50%;
+  background: $gradientPurpleBall;
+  box-shadow: $shadowPurpleBall;
+  filter: blur(4px);
+}
+
+.redBall {
+  position: absolute;
+  z-index: -1;
+  width: 83px;
+  height: 83px;
+  left: 519px;
+  top: 37px;
+  border-radius: 50%;
+  background: $gradientRedBall;
+  box-shadow: $shadowRedBall;
+  backdrop-filter: blur(2px);
+}
+
+.redSmallBall {
+  position: absolute;
+  z-index: -1;
+  width: 28px;
+  height: 28px;
+  left: 851px;
+  top: 501px;
+  border-radius: 50%;
+  background: $gradientRedSmallBall;
+  box-shadow: $shadowRedBall;
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+
+.yellowBall {
+  display: none;
+  z-index: -1;
+}
+
+.yellowLight {
+  display: none;
+  z-index: -1;
+}
+
+.redLight {
+  position: absolute;
+  z-index: -1;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  background: $colorRed;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.purpleLight {
+  position: absolute;
+  z-index: -1;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+  background: $colorPurple;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.glass {
+  display: none;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .purpleBall {
+    width: 40px;
+    height: 40px;
+    left: 296px;
+    top: 291px;
+  }
+  .redBall {
+    width: 43px;
+    height: 43px;
+    left: 29px;
+    top: 457px;
+  }
+  .redSmallBall {
+    width: 18px;
+    height: 18px;
+    left: 278px;
+    top: 618px;
+  }
+  .yellowBall {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 46px;
+    top: 684px;
+    transform: rotate(90deg);
+  }
+  .yellowLight {
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    left: -66px;
+    top: 574px;
+    background: $colorYellow;
+    opacity: 0.4;
+    filter: blur(196px);
+  }
+  .redLight {
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 296px;
+  }
+  .purpleLight {
+    left: 258px;
+    top: 162px;
+  }
+  .glass {
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 445px;
+    left: 0px;
+    top: 55px;
+    background: $gradientGlass;
+    backdrop-filter: blur(7.5px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

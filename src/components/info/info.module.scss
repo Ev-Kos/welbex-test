@@ -1,0 +1,173 @@
+@use '../../utils/variables.scss' as *;
+
+.info {
+  max-width: 1160px;
+  margin: 94px auto 123px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapTittle {
+  max-width: 300px;
+  margin-left: 6px;
+}
+
+.title {
+  @include text(48px, 58px, 400);
+  margin: 0;
+  color: $colorText;
+}
+
+.titleColor {
+  @include text(48px, 58px, 900);
+  background: $gradientTitle, $colorText;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-family: 'Montserrat';
+  @include text(18px, 22px, 400);
+  margin: 30px 0 0;
+  color: $colorText;
+}
+
+.wrapPromo {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 9px 0 0;
+}
+
+.promoTitle {
+  margin: 0;
+  text-align: right;
+  @include text(18px, 22px, 500);
+  align-self: flex-end;
+  max-width: 290px;
+  color: $colorText;
+  letter-spacing: 0.01em;
+}
+
+.color {
+  text-transform: uppercase;
+  background: $gradientText;
+  letter-spacing: 0.07em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  display: grid;
+  align-self: flex-end;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 28px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 40px 0 61px 0;
+  margin: 0;
+  text-align: right;
+  list-style: none;
+}
+
+.titleCard {
+  margin: 0;
+  @include text(18px, 21.78px, 500);
+  letter-spacing: 0.03em;
+  color: $colorText;
+  text-transform: uppercase;
+}
+
+.descriptionCard {
+  margin: 7px 0 0;
+  font-family: 'Montserrat';
+  @include text(16px, 20px, 500);
+  text-align: right;
+  color: $colorText;
+}
+
+.cardsMobile {
+  display: none;
+}
+
+.button {
+  background-color: $colorButton;
+  color: $colorText;
+  @include text(16px, 19px, 500);
+  padding: 21px 35px;
+  align-self: flex-end;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .info {
+    flex-direction: column;
+    gap: 45px;
+    margin: 40px auto 20px;
+  }
+  .wrapTittle {
+    margin-left: 13px;
+  }
+  .title {
+    @include text(36px, 44px, 400);
+    margin-bottom: 2px;
+  }
+  .titleColor {
+    @include text(36px, 43.57px, 900);
+  }
+  .subtitle {
+    margin: 15px 0 0;
+  }
+  .wrapPromo {
+    margin: 0px 0 0 11px;
+  }
+  .promoTitle {
+    text-align: left;
+    align-self: flex-start;
+  }
+  .color {
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
+  .cards {
+    display: none;
+  }
+  .titleCard {
+    text-align: left;
+    font-family: 'Montserrat';
+    @include text(13px, 15.85px, 400);
+    text-transform: uppercase;
+  }
+  .line {
+    background: $gradientText;
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    -webkit-background-clip: text;
+  }
+  .cardsMobile {
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 125px 130px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 14px;
+    margin: 0;
+    padding: 20px 0 39px 0;
+    position: relative;
+    list-style: none;
+  }
+  .card {
+    min-width: 150px;
+  }
+  .button {
+    display: none;
+  }
+}

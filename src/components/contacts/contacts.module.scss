@@ -1,0 +1,95 @@
+@use '../../utils/variables.scss' as *;
+
+.wrapperForHeader {
+  display: flex;
+  gap: 47px;
+  margin: 7px 0 0;
+}
+
+.wrapperForFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wrapperForMobile {
+  display: none;
+}
+
+.contact {
+  @include text(16px, 19px, 500);
+  color: $colorText;
+  min-width: 143px;
+  margin: 9px 0 0;
+}
+
+.contactHeader {
+  display: none;
+}
+
+.contactFooter {
+  @include text(16px, 19px, 500);
+  color: $colorText;
+  min-width: 143px;
+  margin: 18px 0 0;
+}
+.contactMobile {
+  @include text(14px, 16.64px, 400);
+  color: $colorText;
+  min-width: 143px;
+  margin: 7px 0 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  margin: 7px 0 0;
+}
+
+.socialIconsFooter {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  margin: 21px 0 0;
+}
+
+.socialIconsMobile {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  margin: 10px 0 0;
+}
+
+.icon {
+  width: 20px;
+  height: 19px;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapperForHeader {
+    display: none;
+  }
+  .wrapperForFooter {
+    display: none;
+  }
+  .wrapperForMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}

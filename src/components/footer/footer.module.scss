@@ -1,0 +1,127 @@
+@use '../../utils/variables.scss' as *;
+
+.footer {
+  min-height: 275px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto 0;
+}
+
+.content {
+  display: flex;
+  gap: 98px;
+  margin: 0 0 0 8px;
+}
+
+.about, .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  @include text(14px, 17px, 700);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $footerTitle;
+  margin: 0;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 160px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 52px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.link, .linkMenu {
+  @include text(16px, 19px, 400);
+  color: $colorText;
+  text-decoration: none;
+  display: flex;
+}
+
+.link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: right;
+  margin: 0 9px 0 0;
+}
+
+.wrapCopyright {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0 10px 0 0;
+}
+
+.copyright, .copyrightPolitics {
+  font-family: 'Montserrat';
+  font-style: normal;
+  @include text(12px, 15px, 400);
+  text-align: right;
+  color: $colorText;
+  margin: 0;
+}
+
+.copyrightPolitics {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    background: $backgroundFooter;
+    padding: 40px 15px 20px 7px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title {
+    @include text(12px, 15px, 700);
+  }
+  .links {
+    max-height: 160px;
+    column-gap: 8px;
+  }
+  .link {
+    @include text(14px, 17px, 400); 
+  }
+  .linkMenu {
+    max-width: 125px;
+    @include text(14px, 17px, 400); 
+  }
+  .contacts {
+    gap: 49px;
+  }
+  .contact {
+    text-align: left;
+    margin: 30px 0 0 9px;
+  }
+  .wrapCopyright {
+    margin: 0 0 0 8px;
+  }
+  .copyright, .copyrightPolitics {
+    text-align: left;
+  }
+}
