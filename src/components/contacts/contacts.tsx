@@ -17,7 +17,11 @@ export const Contacts: FC<TProps> = ({position}) =>{
         ? styles.wrapperForFooter
         : styles.wrapperForMobile}>
         <p className={styles.contact}>+7 555 555-55-55</p>
-        <ul className={styles.socialIcons}>
+        <ul className={position === 'header' 
+        ? styles.socialIcons 
+        : position === 'footer'
+        ? styles.socialIconsFooter
+        : styles.socialIconsMobile}>
           <li>
             <NavLink to='#'>
               <img className={styles.icon} src={telegram} alt='Иконка телеграмма'/>
@@ -34,6 +38,13 @@ export const Contacts: FC<TProps> = ({position}) =>{
             </NavLink>
           </li>
         </ul>
+        <p className={position === 'header' 
+          ? styles.contactHeader
+          : position === 'footer' 
+          ? styles.contactFooter
+          : styles.contactMobile}>
+          Москва, Путевой проезд 3с1, к 902
+        </p>
       </div>
     )
   }

@@ -64,7 +64,6 @@ export const Footer = () => {
           <p className={styles.copyrightPolitics}>Политика конфиденциальности</p>
         </div>
       </div> 
-      
     </footer>
   )
 }

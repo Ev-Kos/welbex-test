@@ -12,8 +12,9 @@ export const Info = () => {
       </div>
       <div className={styles.wrapPromo}>
         <h2 className={styles.promoTitle}>
-          Вместе с 
-          <span className={styles.color}>бесплатной консультацией</span>{" "}
+          Вместе с&nbsp;
+          <span className={styles.color}>бесплатной</span>{" "}
+          <span className={styles.color}>консультацией</span>{" "}
           мы дарим:
         </h2>
         <ul className={styles.cards}>
@@ -37,25 +38,25 @@ export const Info = () => {
         <ul className={styles.cardsMobile}>
           <li className={styles.card}>
               <h3 className={styles.titleCard}>
-                <span className={styles.line}>— &nbsp;</span>
+                <span className={styles.line}>&mdash; &nbsp;</span>
                 Skype аудит
               </h3>
           </li>
           <li className={styles.card}>
               <h3 className={styles.titleCard}>
-                <span className={styles.line}>— &nbsp;</span>
+                <span className={styles.line}>&mdash; &nbsp;</span>
                 30 виджетов
               </h3>
           </li>
           <li className={styles.card}>
               <h3 className={styles.titleCard}>
-                <span className={styles.line}>— &nbsp;</span>
+                <span className={styles.line}>&mdash; &nbsp;</span>
                 Dashboard
               </h3>
           </li>
           <li className={styles.card}>
             <h3 className={styles.titleCard}>
-              <span className={styles.line}>— &nbsp;</span>
+              <span className={styles.line}>&mdash; &nbsp;</span>
               Месяц AMOCRM
             </h3>
           </li>

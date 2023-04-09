@@ -2,14 +2,14 @@
 
 .info {
   max-width: 1160px;
-  padding: 0 10px;
-  margin: 94px auto 124px;
+  margin: 94px auto 123px;
   display: flex;
   justify-content: space-between;
 }
 
 .wrapTittle {
   max-width: 300px;
+  margin-left: 6px;
 }
 
 .title {
@@ -19,7 +19,7 @@
 }
 
 .titleColor {
-  @include text(36px, 44px, 900);
+  @include text(48px, 58px, 900);
   background: $gradientTitle, $colorText;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,16 +29,14 @@
 .subtitle {
   font-family: 'Montserrat';
   @include text(18px, 22px, 400);
-  margin: 0;
+  margin: 30px 0 0;
   color: $colorText;
 }
 
 .wrapPromo {
   display: flex;
   flex-direction: column;
-  max-width: 391px;
-  @include text(18px, 22px, 500);
-  color: $colorText;
+  margin: 15px 9px 0 0;
 }
 
 .promoTitle {
@@ -48,11 +46,13 @@
   align-self: flex-end;
   max-width: 290px;
   color: $colorText;
+  letter-spacing: 0.01em;
 }
+
 .color {
   text-transform: uppercase;
   background: $gradientText;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +63,7 @@
   align-self: flex-end;
   grid-template-columns: 140px 140px;
   grid-template-rows: 1fr 1fr;
-  column-gap: 31px;
+  column-gap: 28px;
   row-gap: 30px;
   margin: 0;
   padding: 40px 0 61px 0;
@@ -74,12 +74,14 @@
 
 .titleCard {
   margin: 0;
-  @include text(18px, 22px, 500);
-  letter-spacing: 0.05em;
+  @include text(18px, 21.78px, 500);
+  letter-spacing: 0.03em;
+  color: $colorText;
+  text-transform: uppercase;
 }
 
 .descriptionCard {
-  margin: 6px 0 0;
+  margin: 7px 0 0;
   font-family: 'Montserrat';
   @include text(16px, 20px, 500);
   text-align: right;
@@ -92,10 +94,9 @@
 
 .button {
   background-color: $colorButton;
-  justify-content: center;
   color: $colorText;
   @include text(16px, 19px, 500);
-  padding: 22px 32px;
+  padding: 21px 35px;
   align-self: flex-end;
   border: none;
 }
@@ -111,12 +112,29 @@
     gap: 45px;
     margin: 40px auto 20px;
   }
+  .wrapTittle {
+    margin-left: 13px;
+  }
   .title {
     @include text(36px, 44px, 400);
+    margin-bottom: 2px;
+  }
+  .titleColor {
+    @include text(36px, 43.57px, 900);
+  }
+  .subtitle {
+    margin: 15px 0 0;
+  }
+  .wrapPromo {
+    margin: 0px 0 0 11px;
   }
   .promoTitle {
     text-align: left;
     align-self: flex-start;
+  }
+  .color {
+    text-transform: none;
+    letter-spacing: 0.02em;
   }
   .cards {
     display: none;
@@ -124,8 +142,7 @@
   .titleCard {
     text-align: left;
     font-family: 'Montserrat';
-    font-style: normal;
-    @include text(13px, 16px, 400);
+    @include text(13px, 15.85px, 400);
     text-transform: uppercase;
   }
   .line {
@@ -139,12 +156,11 @@
   .cardsMobile {
     display: grid;
     align-self: flex-start;
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 125px 130px;
     grid-template-rows: 1fr 1fr;
-    column-gap: 2px;
     row-gap: 14px;
     margin: 0;
-    padding: 40px 0 61px 0;
+    padding: 20px 0 39px 0;
     position: relative;
     list-style: none;
   }
