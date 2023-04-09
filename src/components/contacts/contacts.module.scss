@@ -5,6 +5,16 @@
   gap: 47px;
 }
 
+.wrapperForFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wrapperForMobile {
+  display: none;
+}
+
 .contact {
   @include text(16px, 19px, 500);
   color: $colorText;
@@ -31,5 +41,13 @@
 @media screen and (max-width: 1140px) {
   .wrapperForHeader {
     display: none;
+  }
+  .wrapperForFooter {
+    display: none;
+  }
+  .wrapperForMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
